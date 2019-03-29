@@ -1,0 +1,429 @@
+/* Creates borders encapsulating the screen, COPY PASTE BOYS */
+#top, #bottom, #left, #right {
+	background: #F7F5F2;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: -13px; }
+
+/* Setup Background Image */
+body {
+  background-image: url("../img/background.png");
+  height:100%;
+
+}
+
+/* Eliminate scroll bar */
+html {
+
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+
+    background: transparent;
+}
+
+/* Manipulate the width of columns */
+.container-fluid {
+  width:198vw;
+
+  display:inline-block;
+  overflow: hidden;
+}
+
+/* Manipulate height of rows */
+.row{
+  height:100%;
+}
+
+/* Setup fonts */
+@font-face {
+font-family: 'Anton-Bold';
+src: url(../fonts/anton/Anton-Bold.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Futura';
+src: url(../fonts/futura/Futura_Bold.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'crimson_text';
+src: url(../fonts/crimson_text/CrimsonText-Regular.otf);
+font-style: normal;
+}
+
+@font-face {
+font-family: 'crimson_text_semibold';
+src: url(../fonts/crimson_text/CrimsonText-Semibold.otf);
+font-style: normal;
+}
+
+/*Manipulate H4 Headers from index */
+.container-fluid h4 {
+  font-size: 4em;
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Anton-Bold';
+}
+
+.farmin-header{
+  color: #f3cf55;
+}
+
+.killin-header{
+  color: #f5b97e;
+}
+
+.truckin-header{
+  color: #de967c;
+}
+
+.dinin-header{
+  color: #be6c4f;
+}
+
+/* These are the headers with the diamond bullets on each sides */
+.container-fluid h6 {
+  text-align:center;
+  padding-top: 15px;
+  font-size:0.65em;
+  font-family: 'Futura';
+
+  letter-spacing:3px;
+}
+
+/*Manipulate MULTILINE div from index, condenses font into multiple lines and moves it to the right */
+.multiline {
+  white-space: pre-wrap;
+  font-size:0.9em;
+  padding-right: 30px;
+  font-family: 'crimson_text';
+
+  position:relative;
+  top:-5px;
+}
+
+/*Manipulate MULTILINE2 (DININ) div from index, condenses font into multiple lines and moves it to the right */
+.multiline2 {
+  white-space: pre-wrap;
+  font-size:0.9em;
+  padding-right: 40px;
+  padding-bottom: 110px;
+  font-family: 'crimson_text';
+
+  position:relative;
+  top:-5px;
+}
+
+/*Eliminates white bleed effect*/
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*Manipulate size and pos of images on home page*/
+
+/*Cow Title Image*/
+.img-fluid-cow-title {
+  max-width: 42%;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+/* Position of NO 1 - NO 4 */
+.img-fluid-numbers {
+  max-width:15%;
+  padding-top:9%;
+}
+
+/* Cow Column Image */
+.img-fluid-cow-col {
+  max-width: 90%;
+  padding-top: 80px;
+}
+
+/* Knife Column Image */
+.img-fluid-knife {
+  max-width: 65%;
+  padding-top: 80px;
+}
+
+/* Truck Column Image */
+.img-fluid-truck {
+  max-width: 100%;
+  padding-top: 80px;
+}
+
+/* Steak Column Image */
+.img-fluid-steak {
+  max-width: 70%;
+}
+
+/* MANIPULATE POS OF SEMI CIRCLES */
+.img-fluid-semi-circle-cow-col{
+  width:110%;
+  height:42%;
+
+  position:relative;
+  right:15px;
+  bottom:240px;
+}
+
+.img-fluid-semi-circle-knife-col{
+  width:110%;
+  /*
+  height:42.5%;
+*/
+  position:relative;
+  right:15px;
+  bottom:225px;
+}
+
+.img-fluid-semi-circle-truck-col{
+  width:110%;
+  /*
+  height:42.5%;
+  */
+
+  position:relative;
+  right:15px;
+  bottom:200px;
+}
+
+.img-fluid-semi-circle-steak-col{
+  width:110%;
+  /*
+  height:42.5%;
+  */
+
+  position:relative;
+  right:15px;
+  bottom:260px;
+}
+
+/* Setup background colors for each column */
+.farminCol{
+  background-color: #d7ad55;
+}
+
+.killinCol{
+  background-color: #d08c57;
+}
+
+.truckinCol{
+  background-color: #bd6c4e;
+}
+
+.dininCol{
+  background-color: #a25b3f;
+}
+
+/* Create 2px kerning for bottom text below images */
+.container-fluid h5{
+  letter-spacing: 2px;
+}
+
+/* Bottom text below images */
+.raise-em-well{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:0.8em;
+
+  font-size:0.9em;
+  position:relative;
+  left:10px;
+  top:20px;
+}
+
+.kill-n-spill{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:0.8em;
+
+  font-size:0.9em;
+  position:relative;
+  left:5px;
+  top:37px;
+}
+
+.pedal-to-metal{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:0.8em;
+
+  font-size:0.9em;
+  position:relative;
+  top:63px;
+}
+
+.dinner-time{
+  text-align: center;
+  font-family: 'crimson_text_semibold';
+  font-size:0.8em;
+
+  font-size:0.9em;
+  position:relative;
+  left:5px;
+  top:0px;
+}
+
+/* If screen is greater than or equal to 1200px, then do {}*/
+@media (max-width: 1200px) and{
+  html {font-size: 1em;}
+  .img-fluid-cow-title{width:50%;}
+
+  .container-fluid{
+    width: 270vw;
+  }
+}
+
+/* If screen is greater than or equal to 992px, then do {}*/
+@media (max-width: 992px) {
+  html {font-size: 1em;}
+  .img-fluid-cow-title{width:80%;}
+
+  .container-fluid{
+    width:290vw;
+  }
+}
+
+/* If screen is greater than or equal to 768, then do */
+@media (max-width: 768px){
+  html {font-size: 1em;}
+  .img-fluid-cow-title{width:50%;}
+
+  .container-fluid{
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  /* Hide Semi Circles in Tablet View (Glitchy) */
+  .img-fluid-semi-circle-cow-col{
+    height:0vh;
+  }
+
+  .img-fluid-semi-circle-knife-col{
+    height:0vh;
+
+  }
+
+  .img-fluid-semi-circle-truck-col{
+    height:0vh;
+
+  }
+
+  .img-fluid-semi-circle-steak-col{
+    height:0vh;
+    padding-bottom:20px;
+  }
+
+  /* Hide border in Tablet view */
+  body {
+    border-width:0;
+  }
+
+  #top, #bottom, #left, #right { display: none; }
+}
+
+/* If screen is greater than or equal to 576, then do, then do {}” */
+@media (max-width: 576px) {
+  .multiline {font-size:0.8em;}
+  .multiline2 {font-size:0.8em;}
+  .img-fluid-cow-title{min-width:90%;}
+
+  .container-fluid{
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  /* Change Col heights in mobile view */
+  .col-lg-8{
+    height:90vh;
+  }
+
+  /* Remove Semi Circle in Mobile View */
+  .img-fluid-semi-circle-cow-col{
+    height:0vh;
+  }
+
+  .img-fluid-semi-circle-knife-col{
+    height:0vh;
+  }
+
+  .img-fluid-semi-circle-truck-col{
+    height:0vh;
+  }
+
+  .img-fluid-semi-circle-steak-col{
+    height:0vh;
+    padding-bottom:20px;
+  }
+
+  /* Manipulate Image size in Mobile View */
+  .img-fluid-cow-col {
+    width:110%;
+    padding-bottom:100px;
+  }
+
+  .img-fluid-knife {
+    width: 35%;
+    padding-bottom:100px;
+  }
+
+  .img-fluid-truck {
+    width: 50%;
+    padding-bottom:100px;
+  }
+
+  .img-fluid-steak {
+    width: 40%;
+    padding-bottom:100px;
+  }
+
+  .raise-em-well{
+    position:relative;
+    top:-50px;
+  }
+
+  .kill-n-spill{
+    position:relative;
+    top:-50px;
+  }
+
+  .pedal-to-metal{
+    position:relative;
+    top:-50px;
+  }
+
+  .dinner-time{
+    position:relative;
+    top:-50px;
+  }
+
+  /* Remove border in Mobile View */
+  body {
+    border-width:0;
+  }
+
+  #top, #bottom, #left, #right {
+    display: none;
+  }
+}
